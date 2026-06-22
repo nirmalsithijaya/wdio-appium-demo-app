@@ -12,15 +12,15 @@ describe("My Login Demo POM", () => {
   });
 
   it("should not login with invalid credentials", async () => {
-    LoginScreen.login("wrongUser", "wrongPassword");
+    await LoginScreen.login("wrongUser", "wrongPassword");
     await expect(LoginScreen.errorMessageText).toHaveText(
       "Provided credentials do not match any user in this service."
     );
   });
 
   it("should login with valid credentials and logout", async () => {
-    LoginScreen.login("bob@example.com", "10203040");
-    await expect(CatalogScreen.productsHeader).toHaveText("Items");
+    await LoginScreen.login("bob@example.com", "10203040");
+    await expect(CatalogScreen.productsHeader).toHaveText("Products");
     await LeftSideMenuScreen.logout();
     await expect(LeftSideMenuScreen.logoutSuccessMessage).toHaveText("You are successfully logged out.");
   });
