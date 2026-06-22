@@ -50,6 +50,14 @@ jobs:
             kill $RECORD_PID || true
             adb pull /data/local/tmp/recording.mp4 recording.mp4 || echo "No recording found"
 
+      - name: Upload debug screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-screenshot
+          path: debug-initial-screen.png
+          if-no-files-found: warn
+
       - name: Upload screen recording
         if: always()
         uses: actions/upload-artifact@v4

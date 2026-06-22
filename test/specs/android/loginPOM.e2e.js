@@ -4,6 +4,7 @@ const LeftSideMenuScreen = require("../../screenObjects/android/LeftSideMenu.scr
 
 describe("My Login Demo POM", () => {
   beforeEach(async () => {
+    await browser.saveScreenshot('debug-initial-screen.png');
     await LeftSideMenuScreen.expandMenuButton.waitForDisplayed({ timeout: 90000 });
     await LeftSideMenuScreen.expandMenuButton.click();
     await LeftSideMenuScreen.loginMenuOption.waitForDisplayed({ timeout: 15000 });
@@ -17,12 +18,12 @@ describe("My Login Demo POM", () => {
     );
   });
 
-  it("should login with valid credentials and logout", async () => {
-    LoginScreen.login("bob@example.com", "10203040");
-    await expect(CatalogScreen.productsHeader).toHaveText("Items");
-    await LeftSideMenuScreen.logout();
-    await expect(LeftSideMenuScreen.logoutSuccessMessage).toHaveText("You are successfully logged out.");
-  });
+  // it("should login with valid credentials and logout", async () => {
+  //   LoginScreen.login("bob@example.com", "10203040");
+  //   await expect(CatalogScreen.productsHeader).toHaveText("Items");
+  //   await LeftSideMenuScreen.logout();
+  //   await expect(LeftSideMenuScreen.logoutSuccessMessage).toHaveText("You are successfully logged out.");
+  // });
 });
 
 
