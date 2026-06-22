@@ -48,7 +48,8 @@ jobs:
             npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js
             fuser -k 4723/tcp || true
             kill $RECORD_PID || true
-            sleep 2
+            adb shell pkill -2 screenrecord || true
+            sleep 3
             adb pull /sdcard/recording.mp4 recording.mp4
 
       - name: Upload screen recording
