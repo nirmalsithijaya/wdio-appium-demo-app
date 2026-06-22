@@ -4,10 +4,10 @@ const LeftSideMenuScreen = require("../../screenObjects/android/LeftSideMenu.scr
 
 describe("My Login Demo POM", () => {
   beforeEach(async () => {
-    await browser.saveScreenshot('debug-initial-screen.png');
-    await LeftSideMenuScreen.expandMenuButton.waitForDisplayed({ timeout: 90000 });
+    await LeftSideMenuScreen.expandMenuButton.waitForDisplayed({ timeout: 120000 });
     await LeftSideMenuScreen.expandMenuButton.click();
-    await LeftSideMenuScreen.loginMenuOption.waitForDisplayed({ timeout: 15000 });
+    await browser.saveScreenshot('debug-initial-screen.png');
+    await LeftSideMenuScreen.loginMenuOption.waitForDisplayed();
     await LeftSideMenuScreen.loginMenuOption.click();
   });
 

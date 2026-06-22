@@ -10,6 +10,9 @@ on:
 env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -66,14 +69,6 @@ jobs:
           path: recording.mp4
           if-no-files-found: warn
 
-      - name: Upload Allure report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report/
-          if-no-files-found: warn
-
       - name: Upload Appium log
         if: always()
         uses: actions/upload-artifact@v4
@@ -81,3 +76,11 @@ jobs:
           name: appium-log
           path: appium.log
           if-no-files-found: warn
+
+      - name: Publish Allure report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
+          destination_dir: allure-report
