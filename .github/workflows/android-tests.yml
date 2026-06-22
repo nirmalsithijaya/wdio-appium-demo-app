@@ -47,10 +47,10 @@ jobs:
             sleep 5
             npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js
             fuser -k 4723/tcp || true
-            kill $RECORD_PID || true
             adb shell pkill -2 screenrecord || true
             sleep 3
-            adb pull /sdcard/recording.mp4 recording.mp4
+            kill $RECORD_PID || true
+            adb pull /sdcard/recording.mp4 recording.mp4 || echo "No recording found"
 
       - name: Upload screen recording
         if: always()
