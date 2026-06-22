@@ -1,0 +1,5 @@
+{
+  "//*[@text=\"Log Out_BROKEN\"]": "//*[@text='Log Out']",
+  "//*[@text='Log Out_Broken']": "//*[@text='Log Out']",
+  "//*[@text='Log Out_BrOKEN']": "//*[@text='Log Out']"
+}

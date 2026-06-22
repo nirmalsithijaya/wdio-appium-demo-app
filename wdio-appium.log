@@ -1,0 +1,226 @@
+[35m[Appium][39m Available drivers:
+[35m[Appium][39m   - uiautomator2@2.7.0 (automationName 'UiAutomator2')
+[35m[Appium][39m   - xcuitest@4.12.0 (automationName 'XCUITest')
+[35m[Appium][39m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"alwaysMatch":{"platformName":"IOS","appium:deviceName":"iPhone 16 Plus","appium:platformVersion":"18.6","appium:automationName":"XCUITest","appium:app":"/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app"},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"IOS","appium:deviceName":"iPhone 16 Plus","appium:platformVersion":"18.6","appium:automationName":"XCUITest","appium:app":"/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app"}}[39m
+[debug] [35m[AppiumDriver@e492][39m Calling AppiumDriver.createSession() with args: [{"platformName":"IOS","appium:deviceName":"iPhone 16 Plus","appium:platformVersion":"18.6","appium:automationName":"XCUITest","appium:app":"/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app"},null,{"alwaysMatch":{"platformName":"IOS","appium:deviceName":"iPhone 16 Plus","appium:platformVersion":"18.6","appium:automationName":"XCUITest","appium:app":"/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app"},"firstMatch":[{}]}]
+[debug] [35m[AppiumDriver@e492][39m Event 'newSessionRequested' logged at 1780489533362 (17:55:33 GMT+0530 (India Standard Time))
+[35m[Appium][39m Attempting to find matching driver for automationName 'XCUITest' and platformName 'IOS'
+[35m[Appium][39m The 'xcuitest' driver was installed and matched caps.
+[35m[Appium][39m Will require it at /Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver
+[debug] [35m[Appium][39m Requiring driver at /Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver
+[35m[AppiumDriver@e492][39m Appium v2.0.0-beta.44 creating new XCUITestDriver (v4.12.0) session
+[35m[AppiumDriver@e492][39m Checking BaseDriver versions for Appium and XCUITestDriver
+[35m[AppiumDriver@e492][39m Appium's BaseDriver version is 8.7.1
+[35m[AppiumDriver@e492][39m XCUITestDriver's BaseDriver version is 8.7.1
+[debug] [35m[XCUITestDriver@5875][39m Creating session with W3C capabilities: {
+[debug] [35m[XCUITestDriver@5875][39m   "alwaysMatch": {
+[debug] [35m[XCUITestDriver@5875][39m     "platformName": "IOS",
+[debug] [35m[XCUITestDriver@5875][39m     "appium:deviceName": "iPhone 16 Plus",
+[debug] [35m[XCUITestDriver@5875][39m     "appium:platformVersion": "18.6",
+[debug] [35m[XCUITestDriver@5875][39m     "appium:automationName": "XCUITest",
+[debug] [35m[XCUITestDriver@5875][39m     "appium:app": "/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app"
+[debug] [35m[XCUITestDriver@5875][39m   },
+[debug] [35m[XCUITestDriver@5875][39m   "firstMatch": [
+[debug] [35m[XCUITestDriver@5875][39m     {}
+[debug] [35m[XCUITestDriver@5875][39m   ]
+[debug] [35m[XCUITestDriver@5875][39m }
+[35m[XCUITestDriver@5875 (33507fd0)][39m Session created with session id: 33507fd0-8ec5-47ee-946f-040912d1c8fb
+[debug] [35m[XCUITest][39m Current user: 'swivelmacbook'
+[35m[XCUITestDriver@5875 (33507fd0)][39m iOS SDK Version set to '18.5'
+[35m[iOSSim][39m Constructing iOS simulator for Xcode version 16.4 with udid '0015DEB6-C2D6-4CAB-9F2D-21524ED002B5'
+[35m[XCUITestDriver@5875 (33507fd0)][39m Determining device to run tests on: udid: '0015DEB6-C2D6-4CAB-9F2D-21524ED002B5', real device: false
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'xcodeDetailsRetrieved' logged at 1780489533508 (17:55:33 GMT+0530 (India Standard Time))
+[35m[BaseDriver][39m Using local app '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'appConfigured' logged at 1780489533509 (17:55:33 GMT+0530 (India Standard Time))
+[debug] [35m[XCUITest][39m Checking whether app '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app' is actually present on file system
+[debug] [35m[XCUITest][39m App is present
+[debug] [35m[XCUITest][39m Getting bundle ID from app '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app': 'com.saucelabs.mydemoapp.rn'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'resetStarted' logged at 1780489533510 (17:55:33 GMT+0530 (India Standard Time))
+[debug] [35m[simctl][39m Error running 'terminate': An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device failed to terminate com.saucelabs.mydemoapp.rn.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The request to terminate "com.saucelabs.mydemoapp.rn" failed. found nothing to terminate
+	found nothing to terminate
+[35m[XCUITest][39m Reset: failed to terminate Simulator application with id "com.saucelabs.mydemoapp.rn"
+[35m[XCUITest][39m Not scrubbing third party app in anticipation of uninstall
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'resetComplete' logged at 1780489533706 (17:55:33 GMT+0530 (India Standard Time))
+[35m[XCUITestDriver@5875 (33507fd0)][39m Using WDA path: '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[35m[XCUITestDriver@5875 (33507fd0)][39m Using WDA agent: '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[debug] [35m[IOSSimulatorLog][39m Starting log capture for iOS Simulator with udid '0015DEB6-C2D6-4CAB-9F2D-21524ED002B5' using simctl
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'logCaptureStarted' logged at 1780489534113 (17:55:34 GMT+0530 (India Standard Time))
+[35m[XCUITestDriver@5875 (33507fd0)][39m Setting up simulator
+[debug] [35m[XCUITest][39m No reason to set locale
+[debug] [35m[XCUITest][39m No iOS / app preferences to set
+[debug] [35m[XCUITest][39m Setting did not need to be updated
+[debug] [35m[iOSSim][39m Setting preferences of 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5 Simulator to {"ConnectHardwareKeyboard":false}
+[debug] [35m[iOSSim][39m Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"StartLastDeviceOnLaunch":false,"DetachOnWindowClose":false,"AttachBootedOnStart":true,"ConnectHardwareKeyboard":false,"PasteboardAutomaticSync":false}
+[debug] [35m[iOSSim][39m Updated 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5 Simulator preferences at '/Users/swivelmacbook/Library/Preferences/com.apple.iphonesimulator.plist' with {"RotateWindowWhenSignaledByGuest":true,"StartLastDeviceOnLaunch":false,"DetachOnWindowClose":false,"AttachBootedOnStart":true,"ConnectHardwareKeyboard":false,"PasteboardAutomaticSync":false,"DevicePreferences":{"0015DEB6-C2D6-4CAB-9F2D-21524ED002B5":{"ConnectHardwareKeyboard":false,"SimulatorExternalDisplay":2114,"ChromeTint":"","SimulatorWindowOrientation":"Portrait","SimulatorWindowRotationAngle":0,"SimulatorWindowGeometry":{"A0DF011C-CAC4-46FA-8E9C-E1CE59A19213":{"WindowCenter":"{1296.5, 499.5}","WindowScale":0.8233471074380165}}}}}
+[debug] [35m[iOSSim][39m Got Simulator UI client PID: 1416
+[35m[iOSSim][39m Both Simulator with UDID '0015DEB6-C2D6-4CAB-9F2D-21524ED002B5' and the UI client are currently running
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'simStarted' logged at 1780489534281 (17:55:34 GMT+0530 (India Standard Time))
+[debug] [35m[XCUITest][39m Verifying application platform
+[debug] [35m[XCUITest][39m CFBundleSupportedPlatforms: ["iPhoneSimulator"]
+[debug] [35m[XCUITest][39m Reset requested. Removing app with id 'com.saucelabs.mydemoapp.rn' from the device
+[debug] [35m[XCUITest][39m Installing '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/app/ios/MyRNDemoApp.app' on Simulator with UUID '0015DEB6-C2D6-4CAB-9F2D-21524ED002B5'...
+[debug] [35m[XCUITest][39m The app has been installed successfully.
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'appInstalled' logged at 1780489535111 (17:55:35 GMT+0530 (India Standard Time))
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Parsed BUILD_DIR configuration value: '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/build'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Got derived data root: '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+[35m[DevCon Factory][39m Requesting connection for device 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5 on local port 8100
+[debug] [35m[DevCon Factory][39m Cached connections count: 0
+[35m[DevCon Factory][39m Successfully requested the connection for 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[WD Proxy][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m WDA is not listening at 'http://127.0.0.1:8100/'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m WDA is currently not running. There is nothing to cache
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Trying to start WebDriverAgent 2 times with 10000ms interval
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Event 'wdaStartAttempted' logged at 1780489535166 (17:55:35 GMT+0530 (India Standard Time))
+[35m[XCUITestDriver@5875 (33507fd0)][39m Launching WebDriverAgent on the device
+[35m[XCUITestDriver@5875 (33507fd0)][39m WebDriverAgent does not need a cleanup. The sources are up to date (1780468725354 >= 1780468725354)
+[debug] [35m[WebDriverAgent][39m Killing running processes 'xcodebuild.*0015DEB6-C2D6-4CAB-9F2D-21524ED002B5, 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5.*XCTRunner, xctest.*0015DEB6-C2D6-4CAB-9F2D-21524ED002B5' for the device 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5...
+[debug] [35m[WebDriverAgent][39m 'pgrep -if 0015DEB6-C2D6-4CAB-9F2D-21524ED002B5.*XCTRunner' didn't detect any matching processes. Return code: 1
+[debug] [35m[WebDriverAgent][39m 'pgrep -if xctest.*0015DEB6-C2D6-4CAB-9F2D-21524ED002B5' didn't detect any matching processes. Return code: 1
+[debug] [35m[WebDriverAgent][39m 'pgrep -if xcodebuild.*0015DEB6-C2D6-4CAB-9F2D-21524ED002B5' didn't detect any matching processes. Return code: 1
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Beginning test with command 'xcodebuild build-for-testing test-without-building -project /Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -derivedDataPath /Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules -destination id=0015DEB6-C2D6-4CAB-9F2D-21524ED002B5 IPHONEOS_DEPLOYMENT_TARGET=18.6 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/Users/swivelmacbook/appium/wdio-appium/appium-demo-app/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Output from xcodebuild will only be logged if any errors are present there. To change this, use 'showXcodeLog' desired capability
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Waiting up to 60000ms for WebDriverAgent to start
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m socket hang up
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[XCUITestDriver@5875 (33507fd0)][39m Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[35m[XCUITestDriver@5875 (33507fd0)][39m connect ECONNREFUSED 127.0.0.1:8100
+[35m[Appium][39m Received SIGINT - shutting down
+[debug] [35m[AppiumDriver@e492][39m There are no active sessions for cleanup
+[35m[HTTP][39m Waiting until the server is closed
+[35m[HTTP][39m Received server close event

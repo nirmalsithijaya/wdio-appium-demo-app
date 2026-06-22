@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__wdio-mcp__tap_element",
+      "mcp__wdio-mcp__get_screenshot"
+    ]
+  }
+}
