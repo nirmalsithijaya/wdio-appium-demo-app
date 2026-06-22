@@ -13,9 +13,7 @@
         "allure-commandline": "^2.42.0",
         "appium": "^3.5.0",
         "appium-uiautomator2-driver": "^7.6.0",
-        "appium-xcuitest-driver": "^11.9.0",
-        "chromedriver": "^106.0.1",
-        "wdio-chromedriver-service": "^8.0.0"
+        "appium-xcuitest-driver": "^11.9.0"
     },
     "scripts": {
         "wdioIOS": "rm -rf allure-results && wdio run config/wdio-ios.conf.js && allure open allure-report",
