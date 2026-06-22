@@ -40,4 +40,7 @@ jobs:
           target: google_apis
           arch: x86_64
           profile: pixel_6
-          script: npx wdio run config/wdio-android.conf.js
+          script: |
+            appium --log appium.log &
+            sleep 5
+            npx wdio run config/wdio-android.conf.js
