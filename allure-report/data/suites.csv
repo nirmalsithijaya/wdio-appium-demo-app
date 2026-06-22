@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","78518","should not login with invalid credentials","My Login Demo POM","2026-06-22","broken","2026-06-22","","","",""
-"","","should login with valid credentials and logout","My Login Demo POM","2026-06-22","unknown","","","","",""
+"","64433","should login with valid credentials and logout","My Login Demo POM","2026-06-22","failed","2026-06-22","","","",""
+"","19507","should not login with invalid credentials","My Login Demo POM","2026-06-22","passed","2026-06-22","","","",""
