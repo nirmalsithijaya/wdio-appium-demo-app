@@ -42,5 +42,7 @@ jobs:
           profile: pixel_6
           script: |
             appium --log appium.log &
+            APPIUM_PID=$!
             sleep 5
             npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js
+            kill $APPIUM_PID || true
