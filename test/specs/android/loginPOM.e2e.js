@@ -19,7 +19,7 @@ describe("My Login Demo POM", () => {
 
   it("should login with valid credentials and logout", async () => {
     LoginScreen.login("bob@example.com", "10203040");
-    await expect(CatalogScreen.productsHeader).toHaveText("Products");
+    await expect(CatalogScreen.productsHeader).toHaveText("Items");
     await LeftSideMenuScreen.logout();
     await expect(LeftSideMenuScreen.logoutSuccessMessage).toHaveText("You are successfully logged out.");
   });
