@@ -1,1 +1,1 @@
-[{"uid":"e198bdd0c643bf20","name":"should not login with invalid credentials","time":{"start":1782129880886,"stop":1782129896712,"duration":15826},"status":"passed","severity":"normal"},{"uid":"987b14336f5b5c16","name":"should login with valid credentials and logout","time":{"start":1782129896713,"stop":1782129913295,"duration":16582},"status":"passed","severity":"normal"}]
+[{"uid":"78e40cc9b5f92b7d","name":"should not login with invalid credentials","time":{"start":1782130481962},"status":"unknown","severity":"normal"}]
