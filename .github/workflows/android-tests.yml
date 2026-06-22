@@ -45,9 +45,7 @@ jobs:
           arch: x86_64
           profile: pixel_6
           script: |
-            adb shell screenrecord /data/local/tmp/recording.mp4 &
-            RECORD_PID=$!
-            bash -lc 'set +e; npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js; TEST_EXIT_CODE=$?; set -e; adb shell pkill -SIGINT screenrecord || true; sleep 5; adb pull /data/local/tmp/recording.mp4 recording.mp4 || echo "No recording found"; test "$TEST_EXIT_CODE" -eq 0 && rm -f recording.mp4 || true; kill "$RECORD_PID" || true; exit "$TEST_EXIT_CODE"'
+            bash -lc 'adb shell screenrecord /data/local/tmp/recording.mp4 & RECORD_PID=$!; set +e; npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js; TEST_EXIT_CODE=$?; set -e; adb shell pkill -SIGINT screenrecord || true; sleep 5; adb pull /data/local/tmp/recording.mp4 recording.mp4 || echo "No recording found"; if [ "$TEST_EXIT_CODE" -eq 0 ]; then rm -f recording.mp4 || true; fi; kill "$RECORD_PID" || true; exit "$TEST_EXIT_CODE"'
 
       - name: Upload debug screenshot
         if: always()
