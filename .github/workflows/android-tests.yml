@@ -43,4 +43,5 @@ jobs:
           script: |
             appium --log appium.log &
             sleep 5
-            npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js; pkill -f appium || true
+            npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js
+            fuser -k 4723/tcp || true
