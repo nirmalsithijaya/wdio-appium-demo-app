@@ -41,7 +41,33 @@ jobs:
           arch: x86_64
           profile: pixel_6
           script: |
+            adb shell screenrecord /sdcard/recording.mp4 &
+            RECORD_PID=$!
             appium --log appium.log &
             sleep 5
             npx wdio run config/wdio-android.conf.js --spec test/specs/android/loginPOM.e2e.js
             fuser -k 4723/tcp || true
+            kill $RECORD_PID || true
+            sleep 2
+            adb pull /sdcard/recording.mp4 recording.mp4
+
+      - name: Upload screen recording
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screen-recording
+          path: recording.mp4
+
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report/
+
+      - name: Upload Appium log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: appium-log
+          path: appium.log
