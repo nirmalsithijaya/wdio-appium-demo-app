@@ -1,12 +1,14 @@
 const CatalogScreen = require("../../screenObjects/android/Catalog.screen");
 const LoginScreen = require("../../screenObjects/android/Login.screen");
-const LeftSideMenuScreen = require("../../screenObjects/android/LeftSideMenu.screen")
+const LeftSideMenuScreen = require("../../screenObjects/android/LeftSideMenu.screen");
 
 describe("My Login Demo POM", () => {
   beforeEach(async () => {
-    await LeftSideMenuScreen.expandMenuButton.waitForDisplayed({ timeout: 120000 });
+    await LeftSideMenuScreen.expandMenuButton.waitForDisplayed({
+      timeout: 120000,
+    });
     await LeftSideMenuScreen.expandMenuButton.click();
-    await browser.saveScreenshot('debug-initial-screen.png');
+    await browser.saveScreenshot("debug-initial-screen.png");
     await LeftSideMenuScreen.loginMenuOption.waitForDisplayed();
     await LeftSideMenuScreen.loginMenuOption.click();
   });
@@ -14,7 +16,7 @@ describe("My Login Demo POM", () => {
   it("should not login with invalid credentials", async () => {
     await LoginScreen.login("wrongUser", "wrongPassword");
     await expect(LoginScreen.errorMessageText).toHaveText(
-      "Provided credentials do not match any user in this service."
+      "Provided credentials do not match any user in this service.",
     );
   });
 
@@ -22,8 +24,8 @@ describe("My Login Demo POM", () => {
     await LoginScreen.login("bob@example.com", "10203040");
     await expect(CatalogScreen.productsHeader).toHaveText("Products");
     await LeftSideMenuScreen.logout();
-    await expect(LeftSideMenuScreen.logoutSuccessMessage).toHaveText("You are successfully logged out.");
+    await expect(LeftSideMenuScreen.logoutSuccessMessage).toHaveText(
+      "You are successfully logged out.",
+    );
   });
 });
-
-
