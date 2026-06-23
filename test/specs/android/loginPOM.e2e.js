@@ -8,7 +8,6 @@ describe("My Login Demo POM", () => {
       timeout: 120000,
     });
     await LeftSideMenuScreen.expandMenuButton.click();
-    await browser.saveScreenshot("debug-initial-screen.png");
     await LeftSideMenuScreen.loginMenuOption.waitForDisplayed();
     await LeftSideMenuScreen.loginMenuOption.click();
   });
